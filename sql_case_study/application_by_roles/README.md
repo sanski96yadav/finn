@@ -6,7 +6,7 @@
 *	It is not best practice to have duplicate primary keys in a dim table unless it is intentional
 *	The first thought of using a composite key, but the ‘roles’ column is not available in the ‘requests_log’ table
 *	The second thought was to remove duplicates, but then there might be information loss, as a user can have 2 roles at a time
-*	It was observed that in the same table, there are repeated user IDs with blank roles, i.e. the same user has 1 role as admin, and the other role is blank. Again, to avoid loss of information, I did not remove those data points
+*	It was also observed that in the same table, there are repeated user IDs with blank roles, i.e. the same user has 1 role as admin, and the other role is blank. Again, to avoid loss of information, I did not remove those data points
   
 
 
