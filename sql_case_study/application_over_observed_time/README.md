@@ -10,6 +10,7 @@ The approach followed to calculate applications over the observed period ```28th
 
 
 
+
 ## Result: ##
 
 <img width="424" alt="image" src="https://github.com/sanski96yadav/finn/assets/175153827/0514a4ac-23cd-41a5-9994-90dde1582041">
