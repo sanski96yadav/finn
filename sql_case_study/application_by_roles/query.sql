@@ -134,7 +134,8 @@ Select
       else
          roles 
    end
-   as roles, application_submitted 
+   as roles,
+application_submitted 
 from
    join_roles 
 order by
