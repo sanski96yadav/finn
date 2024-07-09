@@ -5,7 +5,7 @@ with next_request_form as
       timestamp as current_request,
       lead(timestamp) over (partition by mapped_user_id 
    order by
-      timestamp) as next_request 		-------to implement 10 mins logic
+      timestamp) as next_request-------to implement 10 mins logic
    from
       `finn_interview.requests_log` 
 )
@@ -14,7 +14,7 @@ time_between_sequential_request as
 (
    Select
       *,
-      timestamp_diff(next_request, current_request, millisecond) as interval_millisec		------millisecond chosen as timestamp column has millisecond granularity
+      timestamp_diff(next_request, current_request, millisecond) as interval_millisec------millisecond chosen as timestamp column has millisecond granularity
    from
       next_request_form 
 )
@@ -26,7 +26,7 @@ request_exceeding_ten_mins as
       case
          when
             next_request is null 
-            or interval_millisec > 600000 				--------converted 10 mins to millisecond (10*60*1000)
+            or interval_millisec > 600000--------converted 10 mins to millisecond (10*60*1000)
          then
             1 
          else
