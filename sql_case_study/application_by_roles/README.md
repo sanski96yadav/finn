@@ -1,7 +1,7 @@
 ## Notes: ##
 
 * The roles that are null are allocated to 'unknown' role
-* There were also 12 users with roles [“admin”,”analyst”], [“admin”,”driver”] and those have been allocated 'admin' as role 
+* 12 users with roles [“admin”,”analyst”], [“admin”,”driver”] and those have been allocated 'admin' as role 
 *	It was observed that in the dimension table, ‘user_roles’, there are repeated user IDs i.e. the same user has 2 roles
 *	It is not best practice to have duplicate primary keys in a dim table unless it is intentional
 *	The first thought of using a composite key, but the ‘roles’ column is not available in the ‘requests_log’ table
