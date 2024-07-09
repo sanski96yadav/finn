@@ -14,4 +14,5 @@
 
 ## Result: ##
 
-<img width="436" alt="image" src="https://github.com/sanski96yadav/finn/assets/175153827/aeeab881-bb82-46ce-a9ec-3aca694c6eb2">
+<img width="446" alt="image" src="https://github.com/sanski96yadav/finn/assets/175153827/ed649d79-5735-4522-ac61-090409faa1a0">
+
